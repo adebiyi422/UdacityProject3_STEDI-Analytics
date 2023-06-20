@@ -20,4 +20,14 @@ Some of the early adopters have agreed to share their data for research purposes
 
 #`customer_landing_to_trusted.py` - a python script using Spark that sanitizes the Customer data from the website (landing zone) and only stores the Records who agreed to share their data for research purposed (Trusted Zone) - creating a Glue Table called customer_trusted. (screenshot - `customer_trusted.png`) 
 
-#`accelerometer_landing_to_trusted.py` - a python script using Spark that sanitizes Accelerometer data from the Mobile App (Landing Zone) - and only stores Accelerometer Reading from customers who agreed to share their data for research purposes (Trusted Zone) - creating a glue table called accelerometer_trusted.
+#`accelerometer_landing_to_trusted_zone.py` - a python script using Spark that sanitizes Accelerometer data from the Mobile App (Landing Zone) - and only stores Accelerometer Reading from customers who agreed to share their data for research purposes (Trusted Zone) - creating a glue table called accelerometer_trusted.
+
+#`customer_curated.py` - a python script using Spark that sanitizes the Customer data (Trusted Zone) and creates a Glue Table (Curated Zone) that only includes customers who have accelerometeter data and have agreed to share their data for research. 
+
+#`step_trainer_trusted.py` - a python script using Spark that reads the Step Trianer IoT data stream (S3) and populated a Trusted Zone Glue Table called step_trainer_trusted containing the Step Trainer records data for customers who have accelerometer data and have agreed to share their data for research (customer_curated).
+
+#`machine_learning_curated.py` - a python script that creates an aggregated table that has each of the Step Trainer readings, and the associated accelerometer reading data for the same timestamp, but only for customers who have agreed to share their data, and populates a glue table (machine_learning_curated).
+
+#`customer_landing.sql` and `accelerometer_landing.sql` - SQL DDL scripts from Athena query editor of landing folders from raw data.
+
+#`customer_landing.png`, `accelerometer_landing.png` and ` customer_trusted.png` - output of tables for customer landing, accelerometer landing and customer trusted zone tables.
