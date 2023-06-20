@@ -28,6 +28,6 @@ Some of the early adopters have agreed to share their data for research purposes
 
 #`machine_learning_curated.py` - a python script that creates an aggregated table that has each of the Step Trainer readings, and the associated accelerometer reading data for the same timestamp, but only for customers who have agreed to share their data, and populates a glue table (machine_learning_curated).
 
-#`customer_landing.sql` and `accelerometer_landing.sql` - SQL DDL scripts from Athena query editor of landing folders from raw data.
+#`customer_landing.sql` and `accelerometer_landing.sql` - SQL DDL scripts from Athena query editor of landing folders from raw data folder - https://github.com/udacity/nd027-Data-Engineering-Data-Lakes-AWS-Exercises/tree/main/project.
 
 #`customer_landing.png`, `accelerometer_landing.png` and ` customer_trusted.png` - output of tables for customer landing, accelerometer landing and customer trusted zone tables.
