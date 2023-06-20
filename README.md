@@ -1,5 +1,7 @@
 # UdacityProject3_STEDI-Analytics
 
+## PROJECT Overview
+
 The STEDI Team has been hard at work developing a hardware STEDI Step Trainer that:
 
     trains the user to do a STEDI balance exercise;
