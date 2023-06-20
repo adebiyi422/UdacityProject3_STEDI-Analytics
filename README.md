@@ -15,3 +15,9 @@ Several customers have already received their Step Trainers, installed the mobil
 The STEDI team wants to use the motion sensor data to train a machine learning model to detect steps accurately in real-time. Privacy will be a primary consideration in deciding what data can be used.
 
 Some of the early adopters have agreed to share their data for research purposes. Only these customers’ Step Trainer and accelerometer data should be used in the training data for the machine learning model.
+
+## Files included:
+
+#`customer_landing_to_trusted.py` - a python script using Spark that sanitizes the Customer data from the website (landing zone) and only stores the Records who agreed to share their data for research purposed (Trusted Zone) - creating a Glue Table called customer_trusted. (screenshot - `customer_trusted.png`) 
+
+#`accelerometer_landing_to_trusted.py` - a python script using Spark that sanitizes Accelerometer data from the Mobile App (Landing Zone) - and only stores Accelerometer Reading from customers who agreed to share their data for research purposes (Trusted Zone) - creating a glue table called accelerometer_trusted.
